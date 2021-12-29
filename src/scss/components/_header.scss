@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+    margin: 40px 0;
+    h2 {
+        font-size: 3 * $fz-body;
+    }
+    &-under-line {
+        width: 100px;
+        height: 5px;
+        background-color: $color-theme;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,55 @@
+.item {
+    box-shadow: $box-shadow-light;
+    margin: 10px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    &-image {
+        img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+    &-content {
+        padding: 1.3 * $fz-body;
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            p {
+                font-size: $fz-body;
+                font-weight: $fw-body;
+                letter-spacing: $letter-space-title;
+            }
+            .badge {
+                border-radius: 5px;
+                background-color: $color-secondary;
+                padding: 5px;
+                p {
+                    color: #0095ff;
+                    font-weight: 1.2 * $fw-body;
+                }
+            }
+        }
+        &-description {
+            color: $f-color-body;
+            span {
+                border: none;
+                color: $color-theme;
+                cursor: pointer;
+            }
+        }
+
+        &-btn {
+            text-align: center;
+            padding-top: 20px;
+            button {
+                color: $color-border;
+                border-radius: 5px;
+                height: unset;
+                width: 200px;
+                border: 1px solid $color-border;
+            }
+        }
+    }
+}
